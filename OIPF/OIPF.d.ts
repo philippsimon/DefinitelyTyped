@@ -13,7 +13,7 @@ interface OIPFApplication {}
 
 interface OIPFApplicationCollection {}
 
-interface OIPFApplicationManager {
+interface OIPFApplicationManager extends HTMLObjectElement {
   onLowmemory: () => void;
   onApplicationLoaded: (application: OIPFApplication) => void;
   onApplicationUnloaded: (application: OIPFApplication) => void;
